@@ -1,7 +1,7 @@
 #include <limits.h>
 #include <unistd.h>
 
-size_t	ft_putnbr_fd(int n, int fd, va_list list)
+size_t	ft_putnbr_fd(int n, int fd)
 {
 	char	tab[11];
 	size_t	i;
