@@ -56,7 +56,7 @@ int	verif_base(int nbr, char *base)
 	return (1);
 }
 
-size_t	ft_putnbr_base(int nbr, char *base, va_list list)
+size_t	ft_putnbr_base(int nbr, char *base)
 {
 	size_t	i;
 	char	tab[50];
@@ -64,11 +64,11 @@ size_t	ft_putnbr_base(int nbr, char *base, va_list list)
 
 	i = 0;
 	if (!verif_base(nbr, base))
-		return ;
+		return 0;;
 	if (nbr < 0)
 	{
 		nbr = nbr * (-1);
-		write (1, "-", 1);
+		write (1 , "-", 1);
 	}
 	while (nbr > 0)
 	{
