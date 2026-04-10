@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-size_t	ft_putstr(char *s)
+size_t	ft_s(char *s)
 {
 	size_t	i;
 

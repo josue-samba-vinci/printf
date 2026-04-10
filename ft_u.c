@@ -1,7 +1,7 @@
 #include <limits.h>
 #include <unistd.h>
 
-size_t	ft_unsigned_putnbr(unsigned int n)
+size_t	ft_u(unsigned int n)
 {
 	char	tab[11];
 	size_t	i;

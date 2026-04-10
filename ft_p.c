@@ -1,6 +1,6 @@
 #include "libft.h"
 
-size_t	ft_p_x(unsigned long nbr)
+size_t	ft_p(unsigned long nbr)
 {
 	int	i;
 	char	tab[50];

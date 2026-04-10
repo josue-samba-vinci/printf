@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-size_t	ft_%(void)
+size_t	ft_percent(void)
 {
     char    c;
 
