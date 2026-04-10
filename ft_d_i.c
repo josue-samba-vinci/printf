@@ -1,7 +1,21 @@
 #include <limits.h>
 #include <unistd.h>
 
-size_t	ft_putnbr(int n)
+size_t	ft_min_null(int n)
+{
+	if (n == INT_MIN)
+        {
+			write (1, "-2147483648", 11);
+            return (11);
+        }
+		else
+		{
+			write (1, "0", 1);
+            return (1);
+		}
+}
+
+size_t	ft_d_i(int n)
 {
 	char	tab[11];
 	size_t	i;
@@ -10,18 +24,7 @@ size_t	ft_putnbr(int n)
 	i = 0;
     len = 0;
 	if (n == INT_MIN || n == 0)
-	{
-		if (n == INT_MIN)
-        {
-			write (1, "-2147483648", 11);
-            return 11;
-        }
-		if (n == 0)
-        {
-			write (1, "0", 1);
-            return 1;
-        }
-	}
+		return ft_min_null(n);
 	if (n < 0)
 	{
 		n = -n;
