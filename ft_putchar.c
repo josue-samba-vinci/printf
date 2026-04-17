@@ -1,10 +1,7 @@
 #include "printf.h"
 
-size_t	ft_percent(void)
+size_t	ft_putchar(char c)
 {
-    char    c;
-
-    c = '%';
 	write(1, &c, 1);
     return (1);
 }

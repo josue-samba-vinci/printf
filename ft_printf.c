@@ -1,5 +1,4 @@
-#include "libft.h"
-#include <stdarg.h>
+#include "printf.h"
 
 size_t  ft_printf(const char *format, ...)
 {

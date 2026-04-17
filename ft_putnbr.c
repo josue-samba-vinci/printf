@@ -1,5 +1,4 @@
-#include <limits.h>
-#include <unistd.h>
+#include "printf.h"
 
 size_t	ft_min_null(int n)
 {

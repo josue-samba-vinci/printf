@@ -1,6 +1,6 @@
-#include "libft.h"
+#include "printf.h"
 
-size_t	ft_p(unsigned long nbr)
+size_t	ft_X(unsigned int nbr)
 {
 	int	i;
 	char	tab[50];
@@ -9,13 +9,12 @@ size_t	ft_p(unsigned long nbr)
 
 	i = 0;
 	len = 0;
-	base = "0123456789abcdef";
+	base = "0123456789ABCDEF";
 
 	if (nbr == 0)
 	{
-		write(1, "0x", 2);
 		write(1, &base[0], 1);
-		return(1 + 2);
+		return(1);
 	}
 	while (nbr > 0)
 	{
@@ -23,9 +22,8 @@ size_t	ft_p(unsigned long nbr)
 		nbr = nbr / ft_strlen(base);
 	}
 	tab[i] = '\0';
-    len += i + 2;
+    len += i;
 	i--;
-	write(1, "0x", 2);
 	while (i >= 0)
 		write(1, &tab[i--], 1);
 	return (len);

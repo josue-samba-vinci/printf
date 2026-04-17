@@ -1,6 +1,6 @@
-#include "libft.h"
+#include "printf.h"
 
-size_t	ft_X(unsigned int nbr)
+size_t	ft_x(unsigned int nbr)
 {
 	int	i;
 	char	tab[50];
@@ -9,7 +9,7 @@ size_t	ft_X(unsigned int nbr)
 
 	i = 0;
 	len = 0;
-	base = "0123456789ABCDEF";
+	base = "0123456789abcdef";
 
 	if (nbr == 0)
 	{
