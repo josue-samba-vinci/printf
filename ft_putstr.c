@@ -1,6 +1,6 @@
-#include "printf.h"
+#include "ft_printf.h"
 
-size_t	ft_s(char *s)
+size_t	ft_putstr(char *s)
 {
 	size_t	i;
 

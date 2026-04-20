@@ -1,6 +1,6 @@
-#include "printf.h"
+#include "ft_printf.h"
 
-size_t	ft_p(unsigned long nbr)
+size_t	ft_putnbr_base_address(unsigned long nbr)
 {
 	int	i;
 	char	tab[50];
@@ -13,14 +13,13 @@ size_t	ft_p(unsigned long nbr)
 
 	if (nbr == 0)
 	{
-		write(1, "0x", 2);
-		write(1, &base[0], 1);
-		return(1 + 2);
+		write(1, "(nil)", 5);
+		return(5);
 	}
 	while (nbr > 0)
 	{
-		tab[i++] = base[nbr % ft_strlen(base)];
-		nbr = nbr / ft_strlen(base);
+		tab[i++] = base[nbr % 16];
+		nbr = nbr / 16;
 	}
 	tab[i] = '\0';
     len += i + 2;

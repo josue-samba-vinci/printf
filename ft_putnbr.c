@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "ft_printf.h"
 
 size_t	ft_min_null(int n)
 {
@@ -14,7 +14,7 @@ size_t	ft_min_null(int n)
 		}
 }
 
-size_t	ft_d_i(int n)
+size_t	ft_putnbr(int n)
 {
 	char	tab[11];
 	size_t	i;

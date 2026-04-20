@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "ft_printf.h"
 
 size_t  ft_type(char c, va_list list)
 {

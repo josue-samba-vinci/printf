@@ -1,6 +1,6 @@
-#include "printf.h"
+#include "ft_printf.h"
 
-size_t	ft_x(unsigned int nbr)
+size_t	ft_putnbr_base_lowercase(unsigned int nbr)
 {
 	int	i;
 	char	tab[50];
@@ -18,8 +18,8 @@ size_t	ft_x(unsigned int nbr)
 	}
 	while (nbr > 0)
 	{
-		tab[i++] = base[nbr % ft_strlen(base)];
-		nbr = nbr / ft_strlen(base);
+		tab[i++] = base[nbr % 16];
+		nbr = nbr / 16;
 	}
 	tab[i] = '\0';
     len += i;

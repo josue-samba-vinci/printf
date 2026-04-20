@@ -3,7 +3,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <limits.h>
-size_t  ft_printf(const char *format, ...);
+int  ft_printf(const char *format, ...);
 size_t  ft_type(char c, va_list list);
 size_t	ft_putchar(char c);
 size_t	ft_putnbr(int n);

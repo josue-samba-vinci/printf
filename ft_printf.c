@@ -1,6 +1,6 @@
-#include "printf.h"
+#include "ft_printf.h"
 
-size_t  ft_printf(const char *format, ...)
+int  ft_printf(const char *format, ...)
 {
     size_t  i;
     size_t  sum;
@@ -24,5 +24,5 @@ size_t  ft_printf(const char *format, ...)
         i++;
     }
     va_end(list);
-    return (sum);
+    return (int)(sum);
 }

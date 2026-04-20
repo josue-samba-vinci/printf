@@ -1,6 +1,6 @@
-#include "printf.h"
+#include "ft_printf.h"
 
-size_t	ft_u(unsigned int n)
+size_t	ft_putnbr_unsigned(unsigned int n)
 {
 	char	tab[11];
 	size_t	i;
