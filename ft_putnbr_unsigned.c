@@ -1,25 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_unsigned.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: josamba- <josamba-@student.42belgium.      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/20 17:56:58 by josamba-          #+#    #+#             */
+/*   Updated: 2026/04/20 17:57:01 by josamba-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 size_t	ft_putnbr_unsigned(unsigned int n)
 {
 	char	tab[11];
 	size_t	i;
-    size_t  len;
+	size_t	len;
 
 	i = 0;
-    len = 0;
+	len = 0;
 	if (n == 0)
-    {
-        write (1, "0", 1);
-        return (1);
-    }
+	{
+		write (1, "0", 1);
+		return (1);
+	}
 	while (n > 0)
 	{
 		tab[i++] = n % 10 + 48;
 		n = n / 10;
 	}
-    len += i;
+	len += i;
 	while (i > 0)
 		write(1, &tab[--i], 1);
-    return (len);
+	return (len);
 }

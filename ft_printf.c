@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: josamba- <josamba-@student.42belgium.      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/20 17:54:36 by josamba-          #+#    #+#             */
+/*   Updated: 2026/04/20 17:54:49 by josamba-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-int  ft_printf(const char *format, ...)
+int	ft_printf(const char *format, ...)
 {
-	size_t  i;
-	size_t  sum;
-	va_list list;
-	va_start(list, format);
+	size_t	i;
+	size_t	sum;
+	va_list	list;
 
+	va_start(list, format);
 	i = 0;
 	sum = 0;
 	while (format[i])
@@ -16,7 +28,7 @@ int  ft_printf(const char *format, ...)
 			i++;
 			sum += ft_type(format[i], list);
 		}
-		else 
+		else
 		{
 			write(1, &format[i], 1);
 			sum++;
@@ -24,5 +36,5 @@ int  ft_printf(const char *format, ...)
 		i++;
 	}
 	va_end(list);
-	return (int)(sum);
+	return ((int)(sum));
 }

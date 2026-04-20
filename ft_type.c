@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_type.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: josamba- <josamba-@student.42belgium.      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/20 17:55:24 by josamba-          #+#    #+#             */
+/*   Updated: 2026/04/20 17:55:27 by josamba-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-size_t  ft_type(char c, va_list list)
+size_t	ft_type(char c, va_list list)
 {
 	if (c == 'c')
 		return (ft_putchar((char)va_arg(list, int)));
@@ -19,5 +31,5 @@ size_t  ft_type(char c, va_list list)
 	else if (c == '%')
 		return (ft_percent());
 	else
-		return 0;
+		return (0);
 }
