@@ -4,7 +4,7 @@ size_t	ft_putnbr_base_address(unsigned long nbr)
 {
 	int	i;
 	char	tab[50];
-    size_t  len;
+	size_t  len;
 	char	*base;
 
 	i = 0;
@@ -22,7 +22,7 @@ size_t	ft_putnbr_base_address(unsigned long nbr)
 		nbr = nbr / 16;
 	}
 	tab[i] = '\0';
-    len += i + 2;
+	len += i + 2;
 	i--;
 	write(1, "0x", 2);
 	while (i >= 0)
