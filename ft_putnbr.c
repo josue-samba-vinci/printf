@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-size_t	ft_min_null(int n)
+static size_t	ft_min_null(int n)
 {
 	if (n == INT_MIN)
 	{

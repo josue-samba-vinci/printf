@@ -33,10 +33,10 @@ size_t	ft_putnbr_base_address(unsigned long nbr)
 		nbr = nbr / 16;
 	}
 	tab[i] = '\0';
-	//len += i + 2;
+	len += i + 2;
 	i--;
 	write(1, "0x", 2);
 	while (i >= 0)
 		write(1, &tab[i--], 1);
-	return (len + 2);
+	return (len);
 }
