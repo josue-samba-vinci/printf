@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josamba- <josamba-@student.42belgium.      +#+  +:+       +#+        */
+/*   By: josamba- <josamba-@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:58:27 by josamba-          #+#    #+#             */
 /*   Updated: 2026/04/20 17:58:28 by josamba-         ###   ########.fr       */
