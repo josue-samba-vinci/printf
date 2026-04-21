@@ -21,6 +21,8 @@ int	ft_printf(const char *format, ...)
 	va_start(list, format);
 	i = 0;
 	sum = 0;
+	if (!format)
+		return (-1);
 	while (format[i])
 	{
 		if (format[i] == '%')
